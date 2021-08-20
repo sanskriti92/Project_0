@@ -24,6 +24,26 @@ Tasks:
 Import the restaurants data into MongoDB.
 	i) direct import (no code, using mongoimport)	- databaseA
 	ii) using Python - PyMongo driver				- databaseB
+	
+Solutions:
+
+Steps for uploading the json file.
+
+Step1- Create a database for e.g. here my database name is project0.
+Step2- Create table inside that database, here my table name is restaurantsp0.
+Step3- Open another cmd window navigate to the directory where your json files are saved then
+             type the command for importing the json file.
+             
+             for e.g. - here I have given this command for uploading my json file.
+                            "C:\Program Files\MongoDB\Tools\100\bin\mongoimport" --db project0 --collection restaurantsp0 --type json --file restaurants.json
+
+
+database name (db)- project0
+collection name- restaurantsp0
+
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+
 
 1. Write a MongoDB query to display all the documents in the collection restaurants.
 Ans. db.restaurantsp0.find()
